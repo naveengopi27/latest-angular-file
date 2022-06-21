@@ -1,0 +1,101 @@
+<p>addinventory works!</p>
+<div class="container-fluid py-5">
+    <div class="py-5">
+
+        <div class="wrapper rounded bg-white">
+
+            <div class="h3" style="background-color: coral;">Add Inventory</div>
+            <br />
+            <div class="form">
+                <div class="row">
+                    <div class="col-md-4  ">
+                        <div class="form-outline flex-fill">
+                            <label>Flight Number</label>
+                            <input type="text" [(ngModel)]="inventoryData.flightNo"class="form-control" placeholder="Enter Flight Number" />
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-outline flex-fill">
+                            <label>To Place</label>
+                            <input type="text" [(ngModel)]="inventoryData.toPlace" class="form-control" placeholder="Enter To Place" />
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-outline flex-fill">
+                            <label>From Place</label>
+                            <input type="text" class="form-control" [(ngModel)]="inventoryData.fromPlace" placeholder="Enter From Place" />
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                  
+                <div class="col-md-4  mt-3">
+                    <div class="form-outline flex-fill">
+                        <label>Start Date</label>
+                        <input type="date" class="form-control" [(ngModel)]="inventoryData.startDateTime" placeholder="Start Date" />
+                    </div>
+                </div>
+                <div class="col-md-4  mt-3 ">
+                    <div class="form-outline flex-fill">
+                        <label>End Date</label>
+                        <input type="date" class="form-control" placeholder="End Date" [(ngModel)]="inventoryData.endDateTime" />
+                    </div>
+                </div>
+
+                <div class="col-md-4 mt-3 ">
+                    
+                    <div class="form-outline flex-fill" >
+                        <label>Business Class</label>
+                        <input type="text" class="form-control"  [(ngModel)]="inventoryData.businessClassSeat" placeholder="Number of Business" />
+                                         
+                    </div>  
+                   
+                </div>               
+                </div>    
+                
+
+            <!-- </div> -->
+            <div class="row">
+
+                <div class="col-md-4 mt-3 ">
+                    
+                    <div class="form-outline flex-fill" >
+                        <label> Non Business Class</label>
+                        <input type="text" class="form-control"  [(ngModel)]="inventoryData.nonBusinessClassSeat" placeholder="Number of Business" />
+                                         
+                    </div>  
+                   
+                </div>  
+                <div class="col-md-4  mt-3">
+                   
+                    <div class="form-outline flex-fill">
+                        <label>Number of Rows</label>
+                        <input type="text" class="form-control"  [(ngModel)]="inventoryData.noOfRows" placeholder="Number of Rows" />
+                    </div>
+                                   
+                </div>
+                <div class="col-md-4  mt-3">
+                    <div class="form-outline flex-fill ">
+                        <label>Meal</label>
+
+                        <input type="text" class="form-control"  [(ngModel)]="inventoryData.meal"placeholder="Meals" />
+                       
+                    </div>
+                </div>
+                <div class="col-md-4  mt-3 ">
+                    <div class="form-outline flex-fill">
+                        <label>Ticket Cost</label>
+                        <input type="text" class="form-control"  [(ngModel)]="inventoryData.price"placeholder="Ticket Cost" />
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+            <div class="float-right text-lg-start mt-2 pt-2">
+                <button type="submit" class="btn btn-success btn-lg"
+                 style="padding-left: 2.5rem; padding-right: 2.5rem; margin-left:10px" (click)="submitInventory()">Submit</button>               
+            </div>
+        </div>
+    </div>
+</div>
